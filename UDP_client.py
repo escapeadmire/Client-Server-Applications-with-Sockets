@@ -1,3 +1,6 @@
+#add try except block for error handling
+
+
 import socket
 from socket import *
 serverName = 'localhost'

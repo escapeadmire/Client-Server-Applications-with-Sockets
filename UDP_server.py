@@ -1,6 +1,8 @@
 import socket
 from socket import *
 
+#add try except block for error handling
+
 serverPort = 12000
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind(('', serverPort))
