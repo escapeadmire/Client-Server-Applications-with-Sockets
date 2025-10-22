@@ -1,0 +1,87 @@
+Instructions
+Notes
+
+You may work individually or in pairs.
+Pairs: One laptop acts as the client, the other as the server.
+Individually: Run both components on one system or across virtual machines.
+Estimated time: 6–8 hours. Class time may be provided to work on this project.
+Use Python, Java, C++ or a language of your choice.
+Emulated environments such as Eve-NG, CML, or GNS3 are recommended but not required.
+Your instructor may pick teams at random for a Q&A or spot check on your code. 
+Part A: Socket Programming with UDP
+In this section, you will write a simple client-server application. Refer to section 2.7.1 in your textbook for a Python code snippet.
+
+Use the network topology below as a reference. You can implement the topology in an emulation environment such as Eve-NG, CML or GNS3. 
+
+This image shows a network topology for socket programming.
+Fig 1. Network topology for socket programming
+© 2025, Southern Alberta Institute of Technology 
+
+Choose one of the following applications to build:
+Echo App: Client sends a message and the server returns it.
+Data Checker: Client sends a number and the server returns whether it’s even or odd.
+Set up your UDP client-side sockets.
+Import the modules relevant to your application development and socket programming.
+Define the server IP and port addresses that the client connects to.
+Create a client-side UDP socket.
+Get user input to send to the server. 
+Note:    You can pass the data as an argument to the application or prompt the user to enter a message.
+Receive the echoed message and display it on the screen.
+Implement an exception to gracefully close the application or prevent the client from blocking indefinitely.
+Close the socket to release resources.
+Run a completed code from a command prompt or convert your application to an .exe file using PyInstaller.
+Set up UDP server-side sockets.
+Import modules relevant to your application development and socket programming. 
+Define the server IP and port addresses that the client connects to.
+Create a server side UDP socket.
+Bind the socket to the address and port.
+Receive data from the client.
+Wait for and receive the incoming UDP packet.
+Specify the buffer size (in bytes) to limit the maximum amount of data received in a single call.
+Process the input and send a response.
+Close the socket to release the port and system resources.
+Use Wireshark to capture UDP traffic between the client and the server. Capture the following information for your reflection in Part C:
+Take a screenshot.
+Identify header fields (e.g., source port, destination port).
+Briefly explain the message flow.
+Part B: Socket Programming with TCP
+In this section, you’ll re-implement your client-server application using TCP sockets. You'll explore how TCP handles connection setup, reliability, and ordered delivery, and then compare this to your UDP implementation.
+
+Set up your TCP client-side sockets
+Import modules relevant to your application development and socket programming.
+Define the server IP and port addresses that the client connects to.
+Get user input to send to the server. 
+Note:    You can pass the data as an argument to the application or prompt the user to enter a message.
+Receive a reply from the server and display it on the screen.
+Close the TCP socket to release resources, including the TCP connection between the client and server.
+Note: Implement exceptions as needed.
+Implement the code on the server.
+Set up a listening socket.
+Accept client connections.
+Process input and send response.
+ Handle disconnects.
+Close the connection.
+Note: Implement exceptions as needed.
+Use Wireshark to capture TCP traffic. Capture the following information for your reflection in Part C:
+Take a screenshot.
+Identify key TCP fields (e.g., flags, sequence number).
+Briefly describe differences in reliability and flow control.
+Part C: Reflection
+In this section, you’ll reflect on your implementation and compare UDP and TCP based on your experience.
+
+Answer the following questions in a short (one to two pages) summary or annotated notebook in Word or PDF format:
+How do UDP and TCP differ in socket creation and setup?
+How do they handle message exchange and delivery?
+What debugging or testing challenges did you encounter?
+Based on your experience, what are the trade-offs between using TCP and UDP?
+What basic security risks are present in your implementation? How might you begin to address them in Phase 2?
+Include the following items with your submission:
+At least one screenshot from Wireshark (UDP) and one from Wireshark (TCP).
+Clear references to your own code or console output.
+Submission
+Upload your code (client and server for both protocols) to GitHub.
+Submit the following to Brightspace:
+Link to your GitHub repository
+Reflection document (Word or PDF)
+Wireshark screenshots
+Check the course calendar for the due date. 
