@@ -1,0 +1,28 @@
+
+Part C: Reflection
+In this section, you’ll reflect on your implementation and compare UDP and TCP based on your experience.
+
+Answer the following questions in a short (one to two pages) summary or annotated notebook in Word or PDF format:
+
+How do UDP and TCP differ in socket creation and setup?
+
+How do they handle message exchange and delivery?
+
+What debugging or testing challenges did you encounter?
+
+Based on your experience, what are the trade-offs between using TCP and UDP?
+
+What basic security risks are present in your implementation? How might you begin to address them in Phase 2?
+
+Include the following items with your submission:
+
+At least one screenshot from Wireshark (UDP) and one from Wireshark (TCP).
+
+Clear references to your own code or console output
+
+
+https://github.com/escapeadmire/Client-Server-Applications-with-Sockets
+
+socket = ip + port
+
+UDP or TCP sockets
