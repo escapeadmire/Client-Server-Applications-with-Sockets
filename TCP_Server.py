@@ -8,9 +8,13 @@ serverSocket.bind(('',serverPort))
 serverSocket.listen(1)
 print('The server is ready to receive')
 while True:
-    connectionSocket, addr = serverSocket.accept()
-    sentence = connectionSocket.recv(1024).decode()
-    capitalizedSentence = sentence.upper()
-    connectionSocket.send(capitalizedSentence.
-    encode())
-    connectionSocket.close()
+    try:
+        connectionSocket, addr = serverSocket.accept()
+        message = connectionSocket.recv(1024)
+        modifiedMessage = message.decode().upper()
+        print("Received from client:", message.decode())
+        connectionSocket.send(modifiedMessage.encode())
+    except Exception as e:
+        print(f"Error occurred: {e}")
+    finally:
+        connectionSocket.close()
