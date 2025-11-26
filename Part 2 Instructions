@@ -1,0 +1,37 @@
+Topology: Use the same network setup from Phase 1 or an emulation environment (e.g., virtual Linux machines). You may deploy a Certificate Authority (CA) or use a self-signed certificate.
+
+Set up a certificate.
+Ensure you have a server.crt from Lab - OpenSSL and TLS for Secure Communication. If not, generate a self-signed certificate using OpenSSL, as shown in the lab.
+Implement a TLS client.
+Import modules relevant to your application development and socket programming.
+Define the server IP and port addresses that the client connects to.
+Wrap your TCP socket with TLS context.
+Prompt for and then send user input. 
+Note: You can pass the data as an argument to the application or prompt the user to enter a message.
+Receive a reply from the server and display it on the screen.
+Handle exceptions as needed.
+Close the TLS socket to release resources, including the TLS connection between the client and server.
+Implement a TLS server. 
+Create a secure context using your certificate and private key.
+Wrap the TCP server socket to support TLS.
+Accept and respond to client requests.
+Modularize your logic (use functions where possible).
+Handle exceptions as needed.
+Close connections gracefully.
+Capture the TLS session using Wireshark. 
+Take a screenshot of the TLS packet capture.
+Identify key TLS handshake elements.
+Can you see the actual message contents? Compare this to your TCP capture from Phase 1.
+Part B: Reflection
+In this section, you’ll reflect on your implementation and compare TCP and TLS based on your experience.
+
+A half pager step-by-step explanation of client interaction with different entities.
+Answer the following questions in a short (one to two pages) summary or annotated notebook in Word or PDF format. Make sure your answer is well connected to your implementation. 
+How do TCP and TLS differ in their socket creation and setup?
+How do they handle connection reliability, ordering and encryption?
+What challenges did you face in implementing TLS?
+What are the trade-offs when choosing TLS over TCP?
+Does TLS effectively address the security weaknesses you observed in TCP?
+Include the following items with your submission:
+A screenshot from your TLS Wireshark capture.
+References to your code and/or console output, where appropriate.
